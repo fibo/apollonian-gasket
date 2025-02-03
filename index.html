@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>&lrm;</title>
+  <link rel="icon" href="data:image/x-icon;base64,AA">
+  <style>
+    .container {
+      min-height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class=container>
+    <apollonian-gasket></apollonian-gasket>
+  </div>
+
+  <script type=module>
+    import {ApollonianGasket} from './abcd-i.js'
+
+    addEventListener('load', () => ApollonianGasket.defineHTMLElement())
+  </script>
+</body>
+</html>
