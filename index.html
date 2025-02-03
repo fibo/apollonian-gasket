@@ -6,15 +6,51 @@
   <title>&lrm;</title>
   <link rel="icon" href="data:image/x-icon;base64,AA">
   <style>
+    /** Sync this snippet the one documented in README.md */
     .container {
-      min-height: 400px;
+      position: relative;
+      min-height: 600px;
       width: 100%;
+    }
+    /** Sync this snippet the one documented in README.md */
+    :root {
+      --apollonian-gasket-background-color: #242b24;
+      --apollonian-gasket-color: #fff9d8;
+    }
+    /** Other styles. */
+    html {
+      color: #121212;
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 40px;
+      user-select: none;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .glass {
+      padding: 1em;
+      pointer-events: none;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
     }
   </style>
 </head>
 <body>
   <div class=container>
     <apollonian-gasket></apollonian-gasket>
+    <div class="glass">
+      <h1>Apollonian Gasket</h1>
+    </div>
   </div>
 
   <script type=module>

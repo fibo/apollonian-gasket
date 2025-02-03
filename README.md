@@ -5,14 +5,24 @@
 ## Usage
 
 Add an `<apollonian-gasket></apollonian-gasket>` element to your HTML.
-Style its container with the desired width and height.
+Style its container with the desired width and height; it must have `position: relative`.
+Optionally set CSS custom properties:
+- `--apollonian-gasket-background-color`
+- `--apollonian-gasket-color`
 
 ```html
 <style>
   .container {
-    min-height: 400px;
+    position: relative;
+    min-height: 600px;
     width: 100%;
   }
+  /* Optionally set CSS props.
+  :root {
+    --apollonian-gasket-background-color: #242b24;
+    --apollonian-gasket-color: #fff9d8;
+  }
+  */
 </style>
 
 <div class="container">
